@@ -1,7 +1,5 @@
 from intake.source import base
-from .constants import (
-    CNRFCGauges
-)
+from .constants import CNRFCGauges
 from .utilities import get_nwps_location_metadata
 
 
@@ -24,11 +22,8 @@ class ImpactStatements(base.DataSource):
     def read(self):
         """Return a version of the xarray with all the data in memory"""
 
-        
         metadata = get_nwps_location_metadata(self.gauge_location)
         impact_statements = metadata["flood"].get("impacts", [{}])
         title = f"{self.gauge_location} Impact Statements"
-        
-        
-        
+
         return {"title": title, "data": impact_statements}
