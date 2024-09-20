@@ -1,12 +1,10 @@
 from intake.source import base
-from .constants import CNRFCGauges
-from .utilities import get_nwps_location_metadata
 
 
 class DailyBriefing(base.DataSource):
     container = "python"
     version = "0.0.1"
-    name = "cnrfc_impact_statements"
+    name = "cnrfc_daily_briefing"
     visualization_args = {}
     visualization_group = "CNRFC"
     visualization_label = "Daily Briefing"

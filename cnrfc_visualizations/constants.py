@@ -117,7 +117,7 @@ CNRFCGauges = [
             {"label": "PIIC1 - SAN BENITO RIVER - WILLOW CREEK", "value": "PIIC1"},
             {"label": "TESC1 - TRES PINOS CREEK - TRES PINOS", "value": "TESC1"},
             {
-                "label": "HOSC1 - SAN BENITO RIVER - HOSPITAL ROAD BRIDGE NEAR HOLLISTER",
+                "label": "HOSC1 - SAN BENITO RIVER - HOSPITAL ROAD BRIDGE NEAR HOLLISTER",  # noqa:E501
                 "value": "HOSC1",
             },
             {"label": "PHOC1 - PACHECO CREEK - DUNNEVILLE", "value": "PHOC1"},
@@ -447,17 +447,17 @@ CNRFCGauges = [
                 "value": "NFDC1",
             },
             {
-                "label": "FMDC1 - MIDDLE FORK AMERICAN RIVER - FRENCH MEADOWS RESERVOIR",
+                "label": "FMDC1 - MIDDLE FORK AMERICAN RIVER - FRENCH MEADOWS RESERVOIR",  # noqa:E501
                 "value": "FMDC1",
             },
             {
-                "label": "MFPC1 - MIDDLE FORK AMERICAN RIVER - ABOVE MIDDLE FORK POWERHOUSE",
+                "label": "MFPC1 - MIDDLE FORK AMERICAN RIVER - ABOVE MIDDLE FORK POWERHOUSE",  # noqa:E501
                 "value": "MFPC1",
             },
             {"label": "LNLC1 - GERLE CREEK - LOON LAKE", "value": "LNLC1"},
             {"label": "RUFC1 - RUBICON RIVER - FORESTHILL", "value": "RUFC1"},
             {
-                "label": "NMFC1 - NORTH FORK OF MIDDLE FORK AMERICAN RIVER - FORESTHILL",
+                "label": "NMFC1 - NORTH FORK OF MIDDLE FORK AMERICAN RIVER - FORESTHILL",  # noqa:E501
                 "value": "NMFC1",
             },
             {
@@ -688,7 +688,7 @@ CNRFCGauges = [
             {"label": "STWN2 - CARSON RIVER - CARSON CITY", "value": "STWN2"},
             {"label": "FTCN2 - CARSON RIVER - FORT CHURCHILL", "value": "FTCN2"},
             {
-                "label": "WWBC1 - WEST WALKER RIVER - BELOW LITTLE WALKER RIVER NEAR COLEVILLE",
+                "label": "WWBC1 - WEST WALKER RIVER - BELOW LITTLE WALKER RIVER NEAR COLEVILLE",  # noqa:E501
                 "value": "WWBC1",
             },
             {"label": "TOPN2 - WEST WALKER RIVER - TOPAZ LAKE", "value": "TOPN2"},
