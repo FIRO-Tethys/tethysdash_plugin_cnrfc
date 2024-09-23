@@ -91,13 +91,7 @@ class HEFS(base.DataSource):
                 "type": "linear",
                 "title": {
                     "text": "<b>Stage (Feet)</b>",
-                    # "font": {
-                    #     "size": 10,
-                    # },
                 },
-                # "tickfont": {
-                #     "size": 8,
-                # },
                 "nticks": 10,
                 "linecolor": "lightgray",
                 "showgrid": True,
@@ -140,13 +134,7 @@ class HEFS(base.DataSource):
                 domain=[0.8, 1],
                 title={
                     "text": "<b>Rain +<br>Melt (in.)</b>",
-                    # "font": {
-                    #     "size": 10,
-                    # },
                 },
-                # tickfont={
-                #     "size": 8,
-                # },
                 linecolor="lightgray",
                 showgrid=True,
                 showline=True,
