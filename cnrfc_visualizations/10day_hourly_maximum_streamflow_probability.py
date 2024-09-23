@@ -5,12 +5,12 @@ from .constants import CNRFCGauges, CNRFCEnsembleBaseUrl
 class MaximumFlowProbability(base.DataSource):
     container = "python"
     version = "0.0.1"
-    name = "cnrfc_daily_maximum_flow_probability"
+    name = "cnrfc_10day_hourly_maximum_streamflow_probability"
     visualization_args = {
         "gauge_location": CNRFCGauges,
     }
     visualization_group = "CNRFC"
-    visualization_label = "Daily Maximum Flow Probability"
+    visualization_label = "10-Day Hourly Maximum Streamflow Probability"
     visualization_type = "image"
 
     def __init__(self, gauge_location, metadata=None):
@@ -21,4 +21,4 @@ class MaximumFlowProbability(base.DataSource):
     def read(self):
         """Return a version of the xarray with all the data in memory"""
 
-        return CNRFCEnsembleBaseUrl + self.gauge_location + ".ens_10day.png"
+        return CNRFCEnsembleBaseUrl + self.gauge_location + ".ens_boxwhisker.png"

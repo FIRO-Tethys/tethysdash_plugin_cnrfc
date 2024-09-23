@@ -15,11 +15,11 @@ setup(
     entry_points={
         "intake.drivers": [
             "cnrfc_impact_statements = cnrfc_visualizations.impact_statements:ImpactStatements",  # noqa:E501
-            "cnrfc_10day_accumulated_volume = cnrfc_visualizations.10day_accumulated_volume:AccumulatedVolume",  # noqa:E501
-            "cnrfc_10day_maximum_flow_probability = cnrfc_visualizations.10day_maximum_flow_probability:MaximumFlowProbability",  # noqa:E501
-            "cnrfc_daily_maximum_flow_probability = cnrfc_visualizations.daily_maximum_flow_probability:MaximumFlowProbability",  # noqa:E501
-            "cnrfc_monthly_volume_exceedance = cnrfc_visualizations.monthly_volume_exceedance:VolumeExceedance",  # noqa:E501
-            "cnrfc_5day_volume_exceedance_levels = cnrfc_visualizations.5day_volume_exceedance_levels:VolumeExceedance",  # noqa:E501
+            "cnrfc_10day_streamflow_volume_accumulation = cnrfc_visualizations.10day_streamflow_volume_accumulation:StreamflowVolumeAccumulation",  # noqa:E501
+            "cnrfc_10day_hourly_maximum_streamflow_probability = cnrfc_visualizations.10day_hourly_maximum_streamflow_probability:MaximumFlowProbability",  # noqa:E501
+            "cnrfc_10day_daily_maximum_streamflow_probability = cnrfc_visualizations.10day_daily_maximum_streamflow_probability:MaximumFlowProbability",  # noqa:E501
+            "cnrfc_monthly_streamflow_volume_exceedance = cnrfc_visualizations.monthly_streamflow_volume_exceedance:StreamflowVolumeExceedance",  # noqa:E501
+            "cnrfc_5day_streamflow_volume_exceedance = cnrfc_visualizations.5day_streamflow_volume_exceedance:VolumeExceedance",  # noqa:E501
             "cnrfc_daily_briefing = cnrfc_visualizations.daily_briefing:DailyBriefing",
             "cnrfc_hefs = cnrfc_visualizations.hefs:HEFS",
         ]
