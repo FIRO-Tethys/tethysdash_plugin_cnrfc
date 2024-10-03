@@ -552,7 +552,7 @@ class HEFS(base.DataSource):
             self.plot_annotations.append(
                 dict(
                     showarrow=False,
-                    text=f"{threshold_json["label"]["text"]} ({round(interpolated_flow, 2)} cfs)",  # noqa:E501
+                    text=f"{threshold_json['label']['text']} ({round(interpolated_flow, 2)} cfs)",  # noqa:E501
                     xref="paper",
                     x=0,
                     xanchor="left",
