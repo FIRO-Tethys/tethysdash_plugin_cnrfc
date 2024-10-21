@@ -3,14 +3,14 @@ from setuptools import setup, find_packages
 INSTALL_REQUIRES = ["intake >=0.6.6", "requests"]
 
 setup(
-    name="aquainsight_plugin_cnrfc",
+    name="tethysdash_plugin_cnrfc",
     version="0.0.1",
-    description="CNRFC visualizations plugin for aquainsight",
-    url="https://github.com/FIRO-Tethys/aquainsight_plugin_cnrfc",
+    description="CNRFC visualizations plugin for tethysdash",
+    url="https://github.com/FIRO-Tethys/tethysdash_plugin_cnrfc",
     maintainer="Corey Krewson",
     maintainer_email="ckrewson@aquaveo.com",
     license="BSD",
-    py_modules=["aquainsight_plugin_cnrfc"],
+    py_modules=["tethysdash_plugin_cnrfc"],
     packages=find_packages(),
     entry_points={
         "intake.drivers": [
