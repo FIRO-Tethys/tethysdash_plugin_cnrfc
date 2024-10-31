@@ -150,7 +150,7 @@ CNRFCGauges = [
                 "label": "GUDC1 - GUADALUPE RIVER - SAN JOSE AT ALMADEN EXPRESSWAY",
                 "value": "GUDC1",
             },
-            {"label": "LVKC1 - ARROYO VALLE - DEL VALLE RESERVOIR", "value": "LVKC1"},
+            {"label": "DVAC1 - ARROYO VALLE - DEL VALLE RESERVOIR", "value": "DVAC1"},
             {"label": "LESC1 - LOS GATOS CREEK - LAKE ELSMAN", "value": "LESC1"},
             {
                 "label": "LEXC1 - LOS GATOS CREEK - LEXINGTON RESERVOIR",
