@@ -6,6 +6,17 @@ class MaximumFlowProbability(base.DataSource):
     container = "python"
     version = "0.0.1"
     name = "cnrfc_10day_daily_maximum_streamflow_probability"
+    visualization_tags = [
+        "cnrfc",
+        "10 day",
+        "daily",
+        "streamflow",
+        "probability",
+        "ensemble",
+        "exceedance",
+        "maximum",
+    ]
+    visualization_description = "Depicts the probabilities for the daily maximum streamflow for the next 10 days and compares values to exceedance probabilities. More information can be found at https://www.cnrfc.noaa.gov/ensembleProduct.php"
     visualization_args = {
         "gauge_location": CNRFCGauges,
     }

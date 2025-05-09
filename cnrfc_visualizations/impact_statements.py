@@ -7,6 +7,13 @@ class ImpactStatements(base.DataSource):
     container = "python"
     version = "0.0.1"
     name = "cnrfc_impact_statements"
+    visualization_tags = [
+        "cnrfc",
+        "impact",
+        "flow",
+        "stage",
+    ]
+    visualization_description = "A table that shows stage and the impact that stage will have on the surrounding area."
     visualization_args = {
         "gauge_location": CNRFCGauges,
     }

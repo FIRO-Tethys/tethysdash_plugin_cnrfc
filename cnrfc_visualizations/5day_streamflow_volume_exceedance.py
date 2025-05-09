@@ -6,6 +6,14 @@ class VolumeExceedance(base.DataSource):
     container = "python"
     version = "0.0.1"
     name = "cnrfc_5day_streamflow_volume_exceedance"
+    visualization_tags = [
+        "cnrfc",
+        "5 day",
+        "streamflow",
+        "volume",
+        "exceedance",
+    ]
+    visualization_description = "Depicts the daily streamflow volume accumulation for the next 5 days and compares values to exceedance probabilities. More information can be found at https://www.cnrfc.noaa.gov/ensembleProduct.php"
     visualization_args = {
         "gauge_location": CNRFCGauges,
     }

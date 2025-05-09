@@ -6,6 +6,15 @@ class StreamflowVolumeAccumulation(base.DataSource):
     container = "python"
     version = "0.0.1"
     name = "cnrfc_10day_streamflow_volume_accumulation"
+    visualization_tags = [
+        "cnrfc",
+        "10 day",
+        "volume",
+        "streamflow",
+        "ensemble",
+        "accumulation",
+    ]
+    visualization_description = "Depicts the total streamflow volume accumulation (deterministic and ensembles) for the next 10 days. More information can be found at https://www.cnrfc.noaa.gov/ensembleProduct.php"
     visualization_args = {
         "gauge_location": CNRFCGauges,
     }

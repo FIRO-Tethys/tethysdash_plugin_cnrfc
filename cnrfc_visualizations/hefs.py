@@ -18,7 +18,20 @@ class HEFS(base.DataSource):
     container = "python"
     version = "0.0.1"
     name = "cnrfc_hefs"
-    visualization_args = {"gauge_location": CNRFCGauges, "include_rain_melt_plot": "checkbox"}
+    visualization_tags = [
+        "cnrfc",
+        "hefs",
+        "streamflow",
+        "ensemble",
+        "precipitation",
+        "rain",
+        "snow melt",
+    ]
+    visualization_description = "An interactive chart that depicts the forecasted deterministic and ensemble streamflows. Rain and snow melt values can also be plotted with the streamflows. More information can be found at https://www.cnrfc.noaa.gov/ensembleProduct.php"
+    visualization_args = {
+        "gauge_location": CNRFCGauges,
+        "include_rain_melt_plot": "checkbox",
+    }
     visualization_group = "CNRFC"
     visualization_label = "HEFS"
     visualization_type = "plotly"

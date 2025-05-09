@@ -6,6 +6,15 @@ class StreamflowVolumeExceedance(base.DataSource):
     container = "python"
     version = "0.0.1"
     name = "cnrfc_monthly_streamflow_volume_exceedance"
+    visualization_tags = [
+        "cnrfc",
+        "monthly",
+        "volume",
+        "streamflow",
+        "ensemble",
+        "accumulation",
+    ]
+    visualization_description = "Depicts the total streamflow volume accumulation (deterministic and ensembles) for the next month. More information can be found at https://www.cnrfc.noaa.gov/ensembleProduct.php"
     visualization_args = {
         "gauge_location": CNRFCGauges,
     }
