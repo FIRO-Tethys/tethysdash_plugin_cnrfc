@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "tethysdash_plugin_cnrfc"
+authors = [{ name = "Aquaveo LLC", email = "ckrewson@aquaveo.com" }]
+license = { file = "LICENSE" }
+readme = "README.md"
+classifiers = ["License :: OSI Approved :: MIT License"]
+version = "0.0.2"
+description = "CNRFC visualizations plugin for tethysdash"
+requires-python = ">=3.9"
+dependencies = [
+    "intake>=0.6.6",
+    "pandas>=2.2.3",
+    "requests>=2.32.3",
+    "hjson>=3.1.0",
+    "BeautifulSoup4>=4.12.3",
+]
+
+[project.urls]
+Homepage = "https://github.com/FIRO-Tethys/tethysdash_plugin_cnrfc"
+Issues = "https://github.com/FIRO-Tethys/tethysdash_plugin_cnrfc/issues"
+
+[project.entry-points."intake.drivers"]
+cnrfc_impact_statements = "tethysdash_plugin_cnrfc.cnrfc_visualizations.impact_statements:ImpactStatements"
+cnrfc_10day_streamflow_volume_accumulation = "tethysdash_plugin_cnrfc.cnrfc_visualizations.ten_day_streamflow_volume_accumulation:StreamflowVolumeAccumulation"
+cnrfc_10day_hourly_maximum_streamflow_probability = "tethysdash_plugin_cnrfc.cnrfc_visualizations.ten_day_hourly_maximum_streamflow_probability:MaximumFlowProbability"
+cnrfc_10day_daily_maximum_streamflow_probability = "tethysdash_plugin_cnrfc.cnrfc_visualizations.ten_day_daily_maximum_streamflow_probability:MaximumFlowProbability"
+cnrfc_monthly_streamflow_volume_exceedance = "tethysdash_plugin_cnrfc.cnrfc_visualizations.monthly_streamflow_volume_exceedance:StreamflowVolumeExceedance"
+cnrfc_5day_streamflow_volume_exceedance = "tethysdash_plugin_cnrfc.cnrfc_visualizations.five_day_streamflow_volume_exceedance:VolumeExceedance"
+cnrfc_daily_briefing = "tethysdash_plugin_cnrfc.cnrfc_visualizations.daily_briefing:DailyBriefing"
+cnrfc_hefs = "tethysdash_plugin_cnrfc.cnrfc_visualizations.hefs:HEFS"
+
+[tool.setuptools]
+include-package-data = true
+zip-safe = false
+
+[tool.setuptools.packages.find]
+include = ["*"]
+
+[tool.setuptools.package-data]
+"tethysdash_plugin_cnrfc" = ["static/*.png"]
