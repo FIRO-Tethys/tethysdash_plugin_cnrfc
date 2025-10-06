@@ -20,6 +20,7 @@ class VolumeExceedance(base.DataSource):
     visualization_group = "CNRFC"
     visualization_label = "5 Day Streamflow Volume Exceedance"
     visualization_type = "image"
+    visualization_attribution = "CNRFC"
 
     def __init__(self, gauge_location, metadata=None):
         # store important kwargs

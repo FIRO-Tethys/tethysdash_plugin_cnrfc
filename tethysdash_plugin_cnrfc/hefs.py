@@ -35,6 +35,7 @@ class HEFS(base.DataSource):
     visualization_group = "CNRFC"
     visualization_label = "HEFS"
     visualization_type = "plotly"
+    visualization_attribution = "CNRFC"
 
     def __init__(self, gauge_location, include_rain_melt_plot, metadata=None):
         # store important kwargs

@@ -20,6 +20,7 @@ class ImpactStatements(base.DataSource):
     visualization_group = "CNRFC"
     visualization_label = "Impact Statements"
     visualization_type = "table"
+    visualization_attribution = "CNRFC"
 
     def __init__(self, gauge_location, metadata=None):
         # store important kwargs
