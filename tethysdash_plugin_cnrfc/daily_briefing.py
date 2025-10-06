@@ -16,6 +16,7 @@ class DailyBriefing(base.DataSource):
     visualization_group = "CNRFC"
     visualization_label = "Daily Briefing"
     visualization_type = "image"
+    visualization_attribution = "CNRFC"
 
     def __init__(self, metadata=None):
         # store important kwargs

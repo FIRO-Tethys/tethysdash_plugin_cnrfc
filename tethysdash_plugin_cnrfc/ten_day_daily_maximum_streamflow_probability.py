@@ -23,6 +23,7 @@ class MaximumFlowProbability(base.DataSource):
     visualization_group = "CNRFC"
     visualization_label = "10-Day Daily Maximum Streamflow Probability"
     visualization_type = "image"
+    visualization_attribution = "CNRFC"
 
     def __init__(self, gauge_location, metadata=None):
         # store important kwargs
